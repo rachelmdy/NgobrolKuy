@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".NgobrolKuy">
+    <TextView
+        android:id="@+id/ngobrolText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngobrol"
+        android:textColor="@color/white"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kuy"
+        android:textColor="@color/pink"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ngobrolText"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="4dp"/>
+    <ImageView
+        android:id="@+id/imgSetting"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:src="@drawable/doticon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/ngobrolText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="64dp"
+        android:layout_marginHorizontal="32dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ct1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft1"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/man"
+                    app:layout_constraintTop_toTopOf="@id/ct1"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    />
+                <TextView
+                    android:id="@+id/tv.NgobrolKuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saipul"
+                    android:layout_marginStart="8dp"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@id/ft1"
+                    app:layout_constraintTop_toTopOf="@id/ft1"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/tc.chat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bro tugas yang kmrn gmn"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.NgobrolKuy"
+                    app:layout_constraintStart_toStartOf="@+id/tv.NgobrolKuy"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.30"
+                    app:layout_constraintTop_toBottomOf="@id/tv.NgobrolKuy"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    android:textColor="@color/white"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft2"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/rachel"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@+id/ft1" />
+                <TextView
+                    android:id="@+id/tv.NgobrolKuy2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rachel cynk"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@id/ft2"
+                    app:layout_constraintTop_toTopOf="@id/ft2"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/chat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mikirin kamu xixixi"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.NgobrolKuy2"
+                    app:layout_constraintStart_toStartOf="@+id/tv.NgobrolKuy2"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.25"
+                    app:layout_constraintTop_toBottomOf="@id/tv.NgobrolKuy2"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    android:textColor="@color/white"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft3"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/if20"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@+id/ft2" />
+                <TextView
+                    android:id="@+id/tv.NgobrolKuy3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IF20"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@id/ft3"
+                    app:layout_constraintTop_toTopOf="@id/ft3"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/chat3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="semangat responsinyaa"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.NgobrolKuy3"
+                    app:layout_constraintStart_toStartOf="@+id/tv.NgobrolKuy3"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.10"
+                    app:layout_constraintTop_toBottomOf="@id/tv.NgobrolKuy3"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    android:textColor="@color/white"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft4"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/bobi"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@+id/ft3" />
+                <TextView
+                    android:id="@+id/tv.NgobrolKuy4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bobi"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@id/ft4"
+                    app:layout_constraintTop_toTopOf="@id/ft4"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/chat4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="belom kelar"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.NgobrolKuy4"
+                    app:layout_constraintStart_toStartOf="@+id/tv.NgobrolKuy4"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17.25"
+                    app:layout_constraintTop_toBottomOf="@id/tv.NgobrolKuy4"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    android:textColor="@color/white"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft5"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/rachel"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@+id/ft4" />
+                <TextView
+                    android:id="@+id/tv.NgobrolKuy5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PMKT"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@id/ft5"
+                    app:layout_constraintTop_toTopOf="@id/ft5"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/chat5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="amen"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.NgobrolKuy5"
+                    app:layout_constraintStart_toStartOf="@+id/tv.NgobrolKuy5"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.25"
+                    app:layout_constraintTop_toBottomOf="@id/tv.NgobrolKuy5"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    android:textColor="@color/white"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft6"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/rachel"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@+id/ft5" />
+                <TextView
+                    android:id="@+id/tv.NgobrolKuy6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rachel cynk"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@id/ft6"
+                    app:layout_constraintTop_toTopOf="@id/ft6"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/chat6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mikirin kamu xixixi"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.NgobrolKuy6"
+                    app:layout_constraintStart_toStartOf="@+id/tv.NgobrolKuy6"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.25"
+                    app:layout_constraintTop_toBottomOf="@id/tv.NgobrolKuy6"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    android:textColor="@color/white"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft6"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/rachel"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@+id/ft5" />
+                <TextView
+                    android:id="@+id/tv.NgobrolKuy6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rachel cynk"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@id/ft6"
+                    app:layout_constraintTop_toTopOf="@id/ft6"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/chat6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mikirin kamu xixixi"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.NgobrolKuy6"
+                    app:layout_constraintStart_toStartOf="@+id/tv.NgobrolKuy6"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.25"
+                    app:layout_constraintTop_toBottomOf="@id/tv.NgobrolKuy6"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    android:textColor="@color/white"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft7"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/rachel"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@+id/ft6" />
+                <TextView
+                    android:id="@+id/tv.NgobrolKuy7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rachel cynk"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@id/ft7"
+                    app:layout_constraintTop_toTopOf="@id/ft7"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/chat7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mikirin kamu xixixi"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.NgobrolKuy7"
+                    app:layout_constraintStart_toStartOf="@+id/tv.NgobrolKuy7"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.25"
+                    app:layout_constraintTop_toBottomOf="@id/tv.NgobrolKuy7"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    android:textColor="@color/white"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft8"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/rachel"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@+id/ft7" />
+                <TextView
+                    android:id="@+id/tv.NgobrolKuy8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rachel cynk"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@id/ft8"
+                    app:layout_constraintTop_toTopOf="@id/ft8"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/chat8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mikirin kamu xixixi"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.NgobrolKuy8"
+                    app:layout_constraintStart_toStartOf="@+id/tv.NgobrolKuy8"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.25"
+                    app:layout_constraintTop_toBottomOf="@id/tv.NgobrolKuy8"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    android:textColor="@color/white"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft9"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/rachel"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@+id/ft8" />
+                <TextView
+                    android:id="@+id/tv.NgobrolKuy9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rachel cynk"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@id/ft9"
+                    app:layout_constraintTop_toTopOf="@id/ft9"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/chat9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mikirin kamu xixixi"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.NgobrolKuy9"
+                    app:layout_constraintStart_toStartOf="@+id/tv.NgobrolKuy9"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.25"
+                    app:layout_constraintTop_toBottomOf="@id/tv.NgobrolKuy9"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    android:textColor="@color/white"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
